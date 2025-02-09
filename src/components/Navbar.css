@@ -1,0 +1,61 @@
+/* Navbar.css */
+
+/* Smooth underline effect */
+.hover-underline {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .hover-underline::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ffcc00; /* Change this color as needed */
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+  
+  .hover-underline:hover {
+    color: #ffcc00;
+  }
+  
+  .hover-underline:hover::after {
+    width: 100%;
+  }
+  
+  /* Navbar background and shadow */
+  .navbar {
+    background-color: #222 !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Search input styling */
+  .form-control {
+    border-radius: 20px;
+    padding: 8px 12px;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .form-control:focus {
+    box-shadow: 0px 0px 8px rgba(255, 204, 0, 0.6);
+    border: 1px solid #ffcc00;
+  }
+  
+  /* Search results dropdown */
+  .list-group-item {
+    background: white;
+    border: 1px solid #ddd;
+  }
+  
+  .list-group-item:hover {
+    background: #f8f9fa;
+  }
+  
